@@ -16,5 +16,6 @@ func main() {
 }
 
 func hello(w http.ResponseWriter, req *http.Request) {
-    fmt.Fprintln(w, "hello, world!")
+    fmt.Fprintln(w, "<h1>hello, world!</h1>")
+    fmt.Fprintln(w, "<p>This instance number is "+os.Getenv("CF_INSTANCE_INDEX")+"</p>")
 }
