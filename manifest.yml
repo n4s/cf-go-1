@@ -1,0 +1,7 @@
+applications:
+  - name: gocf
+    memory: 64M
+    instances: 1
+    buildpack: go_buildpack
+    env:
+      GOPACKAGENAME: app.go
